@@ -9,15 +9,10 @@ public class Offer {
 
     private List<OfferItem> unavailableItems = new ArrayList<OfferItem>();
 
-    public Offer(List<OfferItem> availabeItems, List<OfferItem> unavailableItems) {  //litrówka
-        this.availableItems = availabeItems;
+    public Offer(List<OfferItem> availabeItems, List<OfferItem> unavailableItems) {
         this.unavailableItems = unavailableItems;
     }
 
-    /*
-        wywalić niepotrzebne funkcje
-        funkcja findItem() używana jest w funkcji która nie jest używana
-     */
 
     public List<OfferItem> getAvailableItems() {
         return availableItems;

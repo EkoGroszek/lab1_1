@@ -18,11 +18,6 @@ import java.util.Objects;
 
 public class OfferItem {
 
-    /*
-        wolna linia po każdej zmiennej
-        komentarze bez sensu, bo powinny wynikać ze struktury kodu
-        niepotrzebne zmienne
-     */
 
     // product
     private String productId;
@@ -69,7 +64,7 @@ public class OfferItem {
         }
 
         this.totalCost = productPrice.multiply(new BigDecimal(quantity))
-                                     .subtract(discountValue); // to powinno być w jednej linii
+                                     .subtract(discountValue);
     }
 
     public String getProductId() {
@@ -120,7 +115,7 @@ public class OfferItem {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {              // zamienić ify na elseify
+        if (this == obj) {
             return true;
         }
         if (obj == null) {
